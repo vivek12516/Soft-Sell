@@ -1,0 +1,21 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    transition: background-color 0.3s ease;
+  }
+}
+
+@layer utilities {
+  .dark\:bg-gray-800 {
+    background-color: #2d3748; /* Dark background */
+  }
+
+  .dark\:text-gray-300 {
+    color: #e2e8f0; /* Lighter text color */
+  }
+}
