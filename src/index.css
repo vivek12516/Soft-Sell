@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --light-gradient-from: #3b82f6; /* Blue 500 */
+  --light-gradient-via: #6366f1; /* Indigo 500 */
+  --light-gradient-to: #14b8a6; /* Teal 500 */
+
+  --dark-gradient-from: #1e293b; /* Gray 800 */
+  --dark-gradient-via: #374151; /* Gray 700 */
+  --dark-gradient-to: #0f172a; /* Gray 900 */
+}
+
 @layer base {
   html {
     transition: background-color 0.3s ease;
@@ -18,4 +28,25 @@
   .dark\:text-gray-300 {
     color: #e2e8f0; /* Lighter text color */
   }
+}
+
+.dark select {
+  background-color: #374151; /* Or any dark gray you prefer */
+  color: #f3f4f6; /* Light text color for dark background */
+  border-color: #4b5563; /* Slightly lighter border for visibility */
+}
+
+.dark select option {
+  background-color: #374151;
+  color: #f3f4f6;
+}
+
+/* Optional: Style the dropdown arrow */
+.dark select::-ms-expand { /* For Internet Explorer */
+  color: #f3f4f6;
+  border-color: #4b5563;
+}
+
+.dark select::after { /* For modern browsers (may need more specific targeting) */
+  color: #f3f4f6;
 }
