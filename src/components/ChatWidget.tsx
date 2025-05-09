@@ -20,7 +20,7 @@ const AIMascot = ({ onClick, className }: { onClick: () => void; className?: str
   >
     
     <img
-      src="/public/asst.svg" // Replace this with your actual file path
+      src="/asst.svg" // Replace this with your actual file path
 
       alt="AI Mascot"
       className="w-10 h-10 object-contain"
