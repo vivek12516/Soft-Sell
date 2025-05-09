@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { FaUpload, FaSearch, FaDollarSign } from 'react-icons/fa';
 // Assuming these components/utils are available and work with Tailwind/CSS
