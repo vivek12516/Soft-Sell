@@ -18,9 +18,10 @@ const AIMascot = ({ onClick, className }: { onClick: () => void; className?: str
     whileHover={{ scale: 1.05 }}
     aria-label="Toggle Chat"
   >
-    {/* Replace this with your AI mascot image or SVG */}
+    
     <img
       src="/public/asst.svg" // Replace this with your actual file path
+
       alt="AI Mascot"
       className="w-10 h-10 object-contain"
     />
