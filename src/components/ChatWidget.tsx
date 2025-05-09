@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import axios from 'axios';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Send, MessageCircle, Loader2 } from 'lucide-react';
+import { X, Send, Loader2 } from 'lucide-react';
 import { Button } from './ui/button'; // Assuming you have shadcn/ui
 import { Input } from './ui/input'; // Assuming you have shadcn/ui
 import { cn } from './lib/utils'; // Assuming you have shadcn/ui
