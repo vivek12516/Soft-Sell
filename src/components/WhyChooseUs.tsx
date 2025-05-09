@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { FaShieldAlt, FaClock, FaThumbsUp } from 'react-icons/fa';
 

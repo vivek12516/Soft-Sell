@@ -1,8 +1,8 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { FaUpload, FaSearch, FaDollarSign } from 'react-icons/fa';
 // Assuming these components/utils are available and work with Tailwind/CSS
-import { Button } from './ui/button';
+
 import { cn } from './lib/utils';
 
 const HowItWorks = () => {
@@ -72,27 +72,7 @@ const HowItWorks = () => {
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-y-10 sm:gap-y-14 lg:gap-8 px-4 sm:px-0"> {/* Refined gaps */}
           {steps.map((step, index) => {
             const Icon = step.icon;
-            // Determine accent color based on mode for inline styles
-            const currentAccentColor = `var(--current-accent-color, ${step.accentColor})`; // Using CSS variable for flexibility if defined globally
-            const currentAccentColorHover = `var(--current-accent-color-hover, ${step.accentColor}E6)`; // Slightly opaque accent for hover
-            const darkAccentColor = `var(--dark-accent-color, ${step.accentColorDark})`;
-             const darkAccentColorHover = `var(--dark-accent-color-hover, ${step.accentColorDark}E6)`;
-
-             // Use inline style to apply the dynamic accent color
-             const iconContainerStyle = {
-                 // Primary ring color - uses the determined accent color
-                 '--ring-color': 'var(--step-accent-color)', // Define CSS var per element
-                 '--ring-color-dark': 'var(--step-accent-color-dark)',
-                 // Subtle inner shadow or glow based on accent
-                 boxShadow: `inset 0 0 10px 0px var(--step-accent-color), 0 0 15px -3px rgba(0,0,0,0.1)`,
-                 transition: 'box-shadow 0.3s ease-in-out',
-             };
-
-              const iconContainerStyleDark = {
-                 boxShadow: `inset 0 0 10px 0px var(--step-accent-color-dark), 0 0 15px -3px rgba(0,0,0,0.3)`,
-             };
-
-
+            
             return (
               <motion.div
                 key={step.id}
